@@ -1,11 +1,15 @@
 import React from 'react';
-import {SafeAreaView, Text} from 'react-native';
+import {SafeAreaView, Text, Button} from 'react-native';
 
 class Jogo extends React.Component {
   render() {
     return (
       <SafeAreaView>
-       <Text>Eu sou um contador de votos</Text>
+        <Text>Eu sou um contador de votos</Text>
+        <Button
+          onPress={() => console.log('Fui pressionado')}
+          title="Me pressione"
+        />
       </SafeAreaView>
     );
   }
