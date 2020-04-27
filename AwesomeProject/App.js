@@ -1,22 +1,23 @@
-import React from 'react';
-import {SafeAreaView, Text, Button} from 'react-native';
+import React, { useState } from 'react';
+import {
+  SafeAreaView,
+  Text
+} from 'react-native';
 
-class Jogo extends React.Component {
+export default class App extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+    
+    }
+  }
+
   render() {
     return (
       <SafeAreaView>
-        <Text>Eu sou um contador de votos</Text>
-        <Button
-          onPress={() => console.log('Fui pressionado')}
-          title="Me pressione"
-        />
+        <Text>Olaaaaa</Text>
       </SafeAreaView>
-    );
+    )
   }
 }
-
-const styles = {
- 
-};
-
-export default Jogo;
